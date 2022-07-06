@@ -1,0 +1,132 @@
+body {
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "navbar navbar navbar"
+    "adright mainbody adleft"
+    "footer footer footer";
+    grid-template-rows: 100px 80px 1fr 100px;
+    grid-template-columns: 20% 1fr 20%;
+    grid-row-gap: 7px;
+    grid-column-gap: 7px;
+    height: 97vh;
+    width: 100vw;
+    margin: .2rem;
+    box-sizing: border-box;
+}
+
+/*GRID AREAS*/
+
+header {
+    grid-area: header;
+    background-color: rgb(208, 255, 0);
+}
+
+nav {
+    grid-area: navbar;
+    background-color: lightblue;
+}
+
+.mainbody {
+    grid-area: mainbody;
+    background-color: bisque;
+}
+
+.adleft {
+    grid-area: adleft;
+    background-color: darkgray;
+}
+
+.adright {
+    grid-area: adright;
+    background-color: darksalmon;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: black;
+}
+
+/*HEADER*/
+
+header {
+    
+    font-family: indie flower, Arial, Helvetica, sans-serif;
+    font-size: 5rem;
+    text-align: center;
+    letter-spacing: 8px;
+}
+
+/*NAV BUTTONs*/
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.btn {
+    position: relative;
+    display: inline-flex; 
+    width: 150px;
+    height: 55px;
+    margin: 0px;
+    padding: 0px;
+    perspective: 1000px;
+    background-color: ;
+  }
+  .btn a {
+    font-size: 19px;
+    letter-spacing: 1px;
+    transform-style: preserve-3d;
+    transform: translateZ(-25px);
+    transition: transform .25s;
+    font-family: 'Montserrat', sans-serif;
+    
+  }
+  .register a:before,
+  .register a:after{
+    position: absolute;
+    content: "Regisztráció";
+    height: 55px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: px solid black;
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+
+
+  .signin a:before,
+  .signin a:after{
+    position: absolute;
+    content: "Bejelentkezés";
+    height: 55px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: px solid black;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+  .btn a:before{
+    color: black;
+    background: lightblue;
+    transform: rotateY(0deg) translateZ(25px);
+  }
+  .btn a:after{
+    color: black;
+    transform: rotateX(90deg) translateZ(25px);
+  }
+  .btn a:hover{
+    transform: translateZ(-25px) rotateX(-90deg);
+  }
+  
+
+
+    
