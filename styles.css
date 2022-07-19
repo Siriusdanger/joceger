@@ -50,20 +50,23 @@ nav {
 /*HEADER*/
 
 header {
-    
+    display: flex;
     font-family: indie flower, Arial, Helvetica, sans-serif;
     font-size: 5rem;
-    text-align: center;
+    text-align: ;
+    justify-content: center;
+    align-items: center;
     letter-spacing: 8px;
+    
 }
 
 /*NAV BUTTONs*/
 
-.navbar {
-    display: flex;
+nav {
+    display: flexbox;
     flex-direction: row;
-    justify-content: left;
     align-items: center;
+    justify-content: center;
 }
 
 .btn {
@@ -71,11 +74,19 @@ header {
     display: inline-flex; 
     width: 150px;
     height: 55px;
-    margin: 0px;
-    padding: 0px;
+    margin: 10px;
+    padding: 4px;
     perspective: 1000px;
     background-color: ;
   }
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
   .btn a {
     font-size: 19px;
     letter-spacing: 1px;
@@ -109,7 +120,21 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: px solid black;
+    border: 1px solid black;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+  .info a:before,
+  .info a:after{
+    position: absolute;
+    content: "Info";
+    height: 55px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
     box-sizing: border-box;
     border-radius: 5px;
 }
@@ -126,7 +151,22 @@ header {
   .btn a:hover{
     transform: translateZ(-25px) rotateX(-90deg);
   }
+
+/*MAINBODY*/
+
+  .mainbody {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
   
+  .bodybox {
+   width: 180px;
+   height:180px;
+   border: 1px solid;
+  }
+
 
 
     
