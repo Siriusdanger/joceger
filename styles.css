@@ -7,8 +7,8 @@ body {
     "footer footer footer";
     grid-template-rows: 100px 80px 1fr 100px;
     grid-template-columns: 20% 1fr 20%;
-    grid-row-gap: 7px;
-    grid-column-gap: 7px;
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
     height: 97vh;
     width: 100vw;
     margin: .2rem;
@@ -52,7 +52,7 @@ nav {
 header {
     display: flex;
     font-family: indie flower, Arial, Helvetica, sans-serif;
-    font-size: 5rem;
+    font-size: 4.5rem;
     text-align: ;
     justify-content: center;
     align-items: center;
@@ -88,11 +88,11 @@ nav {
 }
 
   .btn a {
-    font-size: 19px;
-    letter-spacing: 1px;
+    font-size: 20px;
+    letter-spacing: 0.3px;
     transform-style: preserve-3d;
     transform: translateZ(-25px);
-    transition: transform .25s;
+    transition: transform .4s;
     font-family: 'Montserrat', sans-serif;
     
   }
@@ -105,7 +105,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: px solid black;
+    border: 1px solid black;
     box-sizing: border-box;
     border-radius: 5px;
   }
